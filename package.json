@@ -1,0 +1,25 @@
+{
+  "name": "music-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "file-loader": "^6.2.0",
+    "nodemon": "^2.0.13",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "three": "^0.132.2"
+  }
+}
