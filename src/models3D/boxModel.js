@@ -34,7 +34,7 @@ export function init(elements) {
         alpha: true,
     });
     // renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setSize(500, 500);
+    renderer.setSize(400, 400);
     elements.appendChild(renderer.domElement);
 
     //

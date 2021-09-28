@@ -22,14 +22,14 @@ const startCityModel = () => {
         alpha: true,
     });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(400, 400);
     renderer.outputEncoding = THREE.sRGBEncoding;
     container.appendChild(renderer.domElement);
 
     const pmremGenerator = new THREE.PMREMGenerator(renderer);
 
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xbfe3dd);
+    // scene.background = new THREE.Color(0xbfe3dd);
     scene.environment = pmremGenerator.fromScene(
         new RoomEnvironment(),
         0.04
@@ -41,7 +41,7 @@ const startCityModel = () => {
         1,
         100
     );
-    camera.position.set(0, 0, 10);
+    camera.position.set(0, 0, 19);
 
     // const controls = new OrbitControls( camera, renderer.domElement );
     // // controls.target.set( 0, 0.5, 0 );
@@ -78,7 +78,7 @@ const startCityModel = () => {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
 
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(400, 400);
     };
 
     function animate() {

@@ -1,10 +1,10 @@
-.sections_container{
+.sections_container {
     height: 100vh;
     position: relative;
 }
-.section_container{
+.section_container {
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 600px;
     height: 400px;
     background-color: rgb(133, 133, 133);
@@ -12,40 +12,52 @@
     top: 47%;
     left: 55%;
 }
-.box_CD{
+.box_CD {
     position: absolute;
     width: 400px;
     height: 400px;
-    left:16%;
+    left: 16%;
     opacity: 0;
     background-color: rgb(153, 153, 153);
     transition: left 0.3s ease-in-out;
+    transition-delay: 0.3s;
 }
-.box_CD > img{
+.box_CD > img {
     width: inherit;
     height: inherit;
 }
-section.active > .box_CD{
-    left:0%;
+section.active > .box_CD {
+    left: 0%;
     opacity: 1;
 }
 section.active {
     opacity: 1;
 }
-.div_container{
+.div_container {
     height: 100vh;
     width: 100%;
 }
 
-canvas{
-    /* position: absolute;
-    transition-delay: 0.3;
+canvas {
+    position: relative;
+    /* transition-delay: 0.3; */
     transition: all 0.3s linear;
-    left:16%; */
+    left: 16%;
+    transition-delay: 0.3s;
 }
-section.active > canvas{
-    /* left:0%; */
+section.active > canvas {
+    left: 0%;
 }
-.threejs_container{
+.threejs_container {
     height: 100vh;
+}
+#container {
+    width: 400px;
+    position: relative;
+    transition: all 0.3s linear;
+    left: 0%;
+    transition-delay: 0.3s;
+}
+section.active > #container {
+    left: -16%;
 }
